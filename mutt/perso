@@ -1,0 +1,15 @@
+#my_pop_pass
+set mbox_type=Maildir
+set folder=~/mail
+set spoolfile=+/
+set header_cache=~/.cache/mutt
+set record = ~/sent
+set my_user=myuser
+
+set realname = 'Real Name'
+
+## Send options.
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set from=myuser@example.com
+set envelope_from=yes

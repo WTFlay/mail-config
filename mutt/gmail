@@ -1,0 +1,15 @@
+## Receive options.
+source "~/.mutt/mailboxes"
+set mbox_type=Maildir
+set folder=~/ImapMail/gmail
+set spoolfile="+INBOX"
+set header_cache=~/.cache/mutt
+set record = +Sent\ Items
+set postponed = "+/Drafts"
+
+## Send options.
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set realname="Real Name"
+set from=gmailuser@gmail.com
+set envelope_from=yes

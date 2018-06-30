@@ -1,0 +1,15 @@
+[retriever]
+type = SimplePOP3SSLRetriever
+server = pop.example.com
+username = username@example.com
+
+# passwd.gpg contains the password.
+password_command = ("/usr/bin/gpg","-dq","/home/myuser/.getmail/passwd.gpg")
+port = 995
+
+[destination]
+type = Maildir
+path = ~/mail/
+
+[options]
+read_all = False
