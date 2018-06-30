@@ -45,6 +45,15 @@ folder-hook $folder 'source ~/.mutt/perso'
 macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.mutt/perso<enter><change-folder>!<enter>'
 macro index,pager <f3> '<sync-mailbox><enter-command>source ~/.mutt/gmail<enter><change-folder>!<enter>'
 
+# use notmuch, see mutt-notmuch
+macro index <F8> \
+    "<enter-command>unset wait_key<enter><shell-escape>~/bin/mutt-notmuch --prompt search<enter><change-folder-readonly>~/.cache/mutt_results<enter>" \
+    "search mail (using notmuch)"
+
+macro index <F9> \
+"<enter-command>unset wait_key<enter><pipe-message>~/bin/mutt-notmuch thread<enter><change-folder-readonly>~/.cache/mutt_results<enter><enter-command>set wait_key<enter>" \
+    "search and reconstruct owning thread (using notmuch)"
+
 #colors
 source ~/.mutt/colors.linux
 
