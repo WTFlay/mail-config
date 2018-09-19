@@ -26,6 +26,8 @@ localfolders = ~/ImapMail/mygmail
 type = Gmail
 remoteuser = gmailuser@gmail.com
 remotepasseval = get_pass()
+ssl_version = tls1_2
+tls_level = tls_secure
 # Necessary as of OfflineIMAP 6.5.4
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 
