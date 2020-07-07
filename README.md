@@ -1,5 +1,7 @@
 # MailConfig
 
+Forked from [here](https://git.artlef.pw/artlef/MailConfig/)
+
 Example config files for managing email on a Linux system.
 
 Software to install:
